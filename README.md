@@ -28,7 +28,7 @@
 
 </details>
 
-***Click [FORK](https://github.com/HyHamza/X-BYTE-fork)***
+***Click [FORK](https://github.com/HyHamza/X-BYTE/fork)***
 
 
 <hr>
