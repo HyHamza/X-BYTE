@@ -1,0 +1,51 @@
+#Follow our channel:
+# https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+name: TalkDrove
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Node.js CI]
+    types:
+      - completed
+
+jobs:
+  build-and-start:
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: nodejs-ci-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Using node 20
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+        
+    - name: Installing
+      run: yarn install --network-concurrency 1
+      
+    - name: Starting X-BYTE 
+      run: npm start
