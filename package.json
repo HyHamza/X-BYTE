@@ -66,3 +66,4 @@
     "youtubedl-core": "^4.11.7",
     "ytdl-core": "git+https://github.com/soya-daizu/ytdl-core#sig-patch"
 }
+}
