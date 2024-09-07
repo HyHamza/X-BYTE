@@ -1,66 +1,69 @@
 {
   "name": "X-BYTE",
-  "description": "X-BYTE buttoned version of Byte.",
+  "description": "X-BYTE buttoned version of Byte..",
   "logo": "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
-  "keywords": ["TalkDrove", "bot", "whatsapp bot", "multi device", "X-BYTE"],
+  "keywords": ["xbyte", "bot", "whatsapp bot", "multi device", "X-BYTE"],
   "success_url": "/",
 
   "env": {
     "SESSION_ID": {
-            "description": "Paste your session ID here (Make sure starts with Byte;;;) or leave empty if deploying through Creds.json",
+            "description": "Paste session ID, else deploy using creds.json",
             "required": true,
-            "value": ""
+            "value": "put session id here"
         },
     "COMMAND_TYPE": {
-            "description": "Put here (button or nonbutton) to change bot command mode",
+            "description": "Put correct spelling button or nonbutton here to change mode",
             "required": true,
             "value": "button"
         },
-        "ANTI_DELETE": {
-            "description": "Put true to enable otherwise put false",
-            "required": false,
-            "value": "false"
-        },
-        "AUTO_STATUS_READ": {
-            "description": "Put true to enable otherwise put false",
-            "required": false,
-            "value": "false"
-        },
-        "ALWAYS_ONLINE": {
-            "description": "Put true to enable otherwise put false",
-            "required": false,
-            "value": "false"
-        },
-        "AUTO_REACT": {
-            "description": "Put true to enable otherwise put false",
-            "required": false,
-            "value": "false"
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Put your HEROKU app name.",
-            "required": false,
+    "HEROKU_APP_NAME": {
+            "description": "Put Heroku app name here",
+            "required": true,
             "value": ""
         },
-        "HEROKU_API_KEY": {
-            "description": "Put HEROKU api key.",
-            "required": false,
+    "HEROKU_API_KEY": {
+            "description": "Put Heroku Api key here ",
+            "required": true,
             "value": ""
         },
-        "WORK_TYPE": {
-            "description": "Put public or private",
-            "required": false,
-            "value": "public"
+    "POSTGRESQL_URL": {
+            "description": "Put Any postgres url here",
+            "required": true,
+            "value": "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9"
         },
     "OWNER_NUMBER": {
-            "description": "Put here your number without +",
+            "description": "Put Your number here",
             "required": true,
-            "value": "92307xxxxxxx"
-        }
+            "value": "923458017380"
+},
+    "ANTI_DELETE": {
+            "description": "Anti delete to true or false",
+            "required": false,
+            "value": "true"
+},
+    "WORK_TYPE": {
+            "description": "WORK_TYPE can be public or private",
+            "required": true,
+            "value": "public"
+},
+    "BOT_EXPIRY_DATE": {
+            "description": "Specify the date on which you want the Bot to delete it self (heroku api key and app name is required) format(YY-MM-DD)",
+            "required": true,
+            "value": "2029-09-05"
+},
+    "BOT_EXPIRY_TIME": {
+            "description": "Specify the time on which you want the Bot to delete it self. (heroku api key and app name is required) format(HH-MM-SS)",
+            "required": true,
+            "value": "16:00:00"
+}
+
     },
-    "buildpacks": [
+         "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
      ],
-  "stack": "heroku-22"
+  "stack": "heroku-24"
+  
+  
 }
