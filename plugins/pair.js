@@ -1,4 +1,5 @@
 const { cmd } = require("../lib/command");
+const axios = require('axios'); // Ensure axios is installed
 const { encode } = require('base-64');
 
 // Store active pair requests
@@ -7,7 +8,7 @@ let activePairRequests = {};
 // Command handler for ".pair"
 cmd(
   {
-    pattern: "pair",
+    pattern: ".pair",
     react: '🔗', // Add a reaction emoji if needed
     desc: "Pair with the bot by entering a phone number.",
     category: "other",
@@ -22,28 +23,45 @@ cmd(
 
       if (phoneNumber) {
         try {
-          // Generate pairing QR code and send to the sender
-          const qrCode = await generatePairingCode(senderNumber);
+          // Fetch the code from the API
+          const code = await fetchPairingCode(phoneNumber);
 
           // Store the active pair request with the sender number and phone number
-          activePairRequests[senderNumber] = { qrCode, phoneNumber };
+          activePairRequests[senderNumber] = { code, phoneNumber };
 
-          // Send QR code to the sender
-          await _0x4c9824.sendMessage(_0x48041a.chat, { text: `Your pairing code is: ${qrCode}` });
+          // Send the pairing code with a button to copy it
+          const buttonMessage = {
+            text: `Your pairing code is: ${code}`,
+            footer: 'Click the button below to copy the code.',
+            buttons: [
+              { buttonId: 'copy_code', buttonText: { displayText: `Copy Code: ${code}` }, type: 1 }
+            ],
+            headerType: 1
+          };
+
+          await _0x4c9824.sendMessage(_0x48041a.chat, buttonMessage);
         } catch (error) {
-          console.error('Error generating pairing code:', error);
+          console.error('Error fetching pairing code:', error);
+          await _0x4c9824.sendMessage(_0x48041a.chat, { text: 'Failed to fetch pairing code. Please try again.' });
         }
       } else {
         console.log('Please provide a valid phone number.');
+        await _0x4c9824.sendMessage(_0x48041a.chat, { text: 'Please provide a valid phone number after the .pair command.' });
       }
     }
   }
 );
 
-// Function to generate a pairing QR code using Baileys
-async function generatePairingCode(senderNumber) {
-  // Replace this with actual logic for generating the pairing QR code
-  return "PAIRED_CODE_" + senderNumber;
+// Function to fetch the pairing code from the URL
+async function fetchPairingCode(phoneNumber) {
+  try {
+    const response = await axios.get(`https://chemical-analiese-talkdrove-d1364357.koyeb.app/code?number=${phoneNumber}`);
+    const code = response.data.code; // Fetch the "code" field from the API response
+    return code;
+  } catch (error) {
+    console.error('Error fetching code from API:', error);
+    throw error;
+  }
 }
 
 // Function to handle post-pairing and send session data
