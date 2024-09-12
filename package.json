@@ -8,7 +8,8 @@
     "stop":"pm2 stop X-BYTE",
     "restart":"pm2 restart X-BYTE"},
   "dependencies":{
-    "axios": "^1.7.7",
+    "base-64": "^1.0.0",
+    "body-parser": "^1.20.0",
     "moment-timezone": "^0.5.45",
     "node-schedule": "^2.1.1",
     "@adiwajshing/keyed-db":"^0.2.4",
