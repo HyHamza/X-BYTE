@@ -8,7 +8,6 @@
     "stop":"pm2 stop X-BYTE",
     "restart":"pm2 restart X-BYTE"},
   "dependencies":{
-    "base-64": "^1.0.0",
     "body-parser": "^1.20.0",
     "moment-timezone": "^0.5.45",
     "node-schedule": "^2.1.1",
