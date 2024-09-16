@@ -45,7 +45,5 @@ ANTI_DELETE : process.env.ANTI_DELETE || true ,
 BOT_DELETE_TIME : process.env.BOT_DELETE_TIME || '7',
 SECONDS_MINUTES_DAYS : process.env.SECONDS_MINUTES_DAYS || "days",
 DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '' : process.env.DELETEMSGSENDTO,
-REACT_NUMBER : process.env.REACT_NUMBER || '923458017380',
-REACT : process.env.REACT|| '😋'
   
 };
