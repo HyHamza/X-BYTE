@@ -9,7 +9,7 @@
     "SESSION_ID": {
             "description": "Paste session ID, else deploy using creds.json",
             "required": true,
-            "value": ""
+            "value": "put session id here"
         },
     "COMMAND_TYPE": {
             "description": "Put correct spelling button or nonbutton here to change mode",
@@ -46,16 +46,17 @@
             "required": true,
             "value": "public"
 },
-    "BOT_EXPIRY_DATE": {
-            "description": "Specify the date on which you want the Bot to delete it self (heroku api key and app name is required) format(YY-MM-DD)",
+    "BOT_DELETE_TIME": {
+            "description": "Specify the time on which you want the Bot to delete it self (heroku api key and app name is required) format(YY-MM-DD)",
             "required": true,
-            "value": "2029-09-05"
-},
-    "BOT_EXPIRY_TIME": {
-            "description": "Specify the time on which you want the Bot to delete it self. (heroku api key and app name is required) format(HH-MM-SS)",
+            "value": "10"
+    },
+
+        "SECONDS_MINUTES_DAYS": {
+            "description": "Available time, seconds, minutes, hours, days, years...",
             "required": true,
-            "value": "16:00:00"
-}
+            "value": "days"
+    }
 
     },
          "buildpacks": [
