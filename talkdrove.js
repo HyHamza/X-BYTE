@@ -1193,14 +1193,7 @@ async function connectToWA() {
           }
         });
       }
-      if (_0x373c5f.sender == config.REACT_NUMBER,"@s.whatsapp.net") {
-        await _0x529717.sendMessage(_0x203207, {
-          'react': {
-            'text': config.REACT,
-            'key': _0x373c5f.key
-          }
-        });
-      }
+      
       let _0x4e18c5 = _0x421246 ? prefixRegex.test(_0x421246[0x0]) : "false";
       if (config.READ_CMD_ONLY === "true" && _0x4e18c5) {
         await _0x529717.readMessages([_0x373c5f.key]);
