@@ -46,17 +46,16 @@
             "required": true,
             "value": "public"
 },
-    "BOT_DELETE_TIME": {
-            "description": "Specify the time on which you want the Bot to delete it self (heroku api key and app name is required) format(YY-MM-DD)",
-            "required": true,
-            "value": "10"
-    },
-
-        "SECONDS_MINUTES_DAYS": {
-            "description": "Available time, seconds, minutes, hours, days, years...",
-            "required": true,
-            "value": "days"
-    }
+    "BOT_EXPIRY_DATE": {
+            "description": "Specify the date on which you want the Bot to delete it self (heroku api key and app name is required) format(YY-MM-DD)",
+            "required": false,
+            "value": "2029-09-05"
+},
+    "BOT_EXPIRY_TIME": {
+            "description": "Specify the time on which you want the Bot to delete it self. (heroku api key and app name is required) format(HH-MM-SS)",
+            "required": false,
+            "value": "16:00:00"
+}
 
     },
          "buildpacks": [
