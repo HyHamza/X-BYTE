@@ -9,7 +9,7 @@
     "SESSION_ID": {
             "description": "Paste session ID, else deploy using creds.json",
             "required": true,
-            "value": "put session id here"
+            "value": ""
         },
     "COMMAND_TYPE": {
             "description": "Put correct spelling button or nonbutton here to change mode",
