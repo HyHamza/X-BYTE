@@ -6,15 +6,15 @@ return text === fault ? true : false;
 
 module.exports = {
 SESSION_ID: process.env.SESSION_ID === undefined ? '' : process.env.SESSION_ID,
-OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '' : process.env.OWNER_NUMBER,   
+OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '' : process.env.OWN  
 ONLY_GROUP: process.env.ONLY_GROUP === undefined ? 'false' : process.env.ONLY_GROUP,
-ONLY_ME: process.env.ONLY_ME === undefined ? 'false' : process.env.ONLY_ME,
+ONLY_ME: process.env.ONLY_ME === undefined ? 'false' : +223 97695222
 AUTO_STATUS_READ:  process.env.AUTO_STATUS_READ  || false  ,
 PREFIX: process.env.PREFIX || '.' ,
 POSTGRESQL_URL: process.env.POSTGRESQL_URL === undefined ? 'postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9" : "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9' : process.env.POSTGRESQL_URL,
 MAX_SIZE: 500, 
 ALIVE:  process.env.ALIVE  || ''  ,
-FOOTER: process.env.FOOTER=== undefined ? '> Created by Hamza': process.env.FOOTER,
+FOOTER: process.env.FOOTER=== undefined ? '> Created by Hamza':+223 97695222
 OWNER_REACT:  process.env.OWNER_REACT  || true  ,
 ADMIN_EVENT:  process.env.ADMIN_EVENT  || true  ,   
 AUTO_BLOCK:  process.env.AUTO_BLOCK  || false  ,
