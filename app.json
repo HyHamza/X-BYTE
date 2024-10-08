@@ -1,7 +1,7 @@
 {
   "name": "X-BYTE",
   "description": "X-BYTE buttoned version of Byte..",
-  "logo": "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png",
+  "logo": "https://raw.githubusercontent.com/PEGASUA/PEGASUS/main/Images/XByte-logo.png",
   "keywords": ["xbyte", "bot", "whatsapp bot", "multi device", "X-BYTE"],
   "success_url": "/",
 
@@ -34,7 +34,7 @@
     "OWNER_NUMBER": {
             "description": "Put Your number here",
             "required": true,
-            "value": "923458017380"
+            "value": "923167118815"
 },
     "ANTI_DELETE": {
             "description": "Anti delete to true or false",
@@ -54,7 +54,7 @@
     "BOT_EXPIRY_TIME": {
             "description": "Specify the time on which you want the Bot to delete it self. (heroku api key and app name is required) format(HH-MM-SS)",
             "required": false,
-            "value": "16:00:00"
+            "value": "24:00:00"
 }
 
     },
