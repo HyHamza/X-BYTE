@@ -9,8 +9,8 @@
 <hr>
 
 <p align="center">
-<a href="https://github.com/HyHamza">
-    <img src="https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/XByte-logo.png"  width="700px">
+<a href="https://github.com/hyhamza">
+    <img src="https://raw.githubusercontent.com/hyhamza/hyhamza/main/Images/XByte-logo.png"  width="700px">
 </a>
 <hr>
 
@@ -23,7 +23,7 @@
 
 ## WHATSAPP CHANNEL
 
-[![TalkDrove](https://telegra.ph/file/99460844d012cad1b7ee4.jpg)](https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l)
+[![Pegasus](https://telegra.ph/file/99460844d012cad1b7ee4.jpg)](https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l)
  
 
 </details>
