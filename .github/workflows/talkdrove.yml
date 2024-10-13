@@ -1,6 +1,5 @@
-#Follow our channel:
-# https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l
-
+#JOIN our GROUP:
+https://chat.whatsapp.com/J2blP3TAoOm3cjYbbkfDSj
 
 
 
@@ -47,5 +46,5 @@ jobs:
     - name: Installing
       run: yarn install --network-concurrency 1
       
-    - name: Starting X-BYTE 
+    - name: Starting PEGASUS
       run: npm start
