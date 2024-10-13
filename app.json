@@ -2,7 +2,7 @@
   "name": "X-BYTE",
   "description": "X-BYTE buttoned version of Byte..",
   "logo": "https://raw.githubusercontent.com/PEGASUA/PEGASUS/main/Images/XByte-logo.png",
-  "keywords": ["xbyte", "bot", "whatsapp bot", "multi device", "X-BYTE"],
+  "keywords": ["PEGASUS ", "bot", "whatsapp bot", "multi device", "X-BYTE"],
   "success_url": "/",
 
   "env": {
