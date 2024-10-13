@@ -1,5 +1,5 @@
-#Follow our channel:
-# https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l
+#join our channel:
+https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l
 
 
 
@@ -13,9 +13,7 @@
 
 
 
-
-
-name: TalkDrove
+name: talkdrove 
 
 on:
   push:
@@ -47,5 +45,5 @@ jobs:
     - name: Installing
       run: yarn install --network-concurrency 1
       
-    - name: Starting X-BYTE 
+    - name: Starting PEGASUS
       run: npm start
